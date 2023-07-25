@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst Website</title>
+
+    <!-- lato font cdn google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- lato font style  -->
+    <style>
+      .lato {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+    <!-- daisy ui cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn  -->
+    <script
+      src="https://kit.fontawesome.com/f20932a853.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="lato">
+    <header class="max-w-screen-xl mx-auto lg:mb-12">
+      <nav
+        class="navbar bg-base-100 lg:flex md:justify-between lg:justify-around bg-[#F85559] rounded-full"
+      >
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-base px-1 text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="flex justify-center gap-4">
+          <img src="./images/logo.png" alt="logo" />
+          <h2 class="text-white text-2xl lg:text-5xl font-bold">Fruit Burst</h2>
+        </div>
+
+        <div class="form-control hidden md:hidden lg:block">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="input input-bordered md:w-auto rounded-full relative"
+          />
+          <i
+            class="fa-solid fa-magnifying-glass absolute lg:top-8 lg:right-56"
+          ></i>
+        </div>
+        <!-- drop down for mobile devices  -->
+        <div class="navbar-end">
+          <div class="dropdown lg:hidden">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box overflow-hidden"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+              <li><i class="fa-solid fa-magnifying-glass absolute"></i></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
