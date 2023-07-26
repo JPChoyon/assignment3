@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst Website</title>
+    <!-- favicon set  -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
     <!-- lato font cdn google  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +38,7 @@
     <header class="max-w-screen-xl mx-auto lg:mb-12">
       <!-- nav bar start from here  -->
       <nav
-        class="navbar bg-base-100 lg:flex md:justify-between lg:justify-around bg-[#F85559] rounded-full"
+        class="navbar lg:flex md:justify-between lg:justify-around bg-white lg:bg-[#F85559] rounded-full"
       >
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal text-base px-1 text-white">
@@ -48,7 +50,9 @@
         </div>
         <div class="flex justify-center gap-4">
           <img src="./images/logo.png" alt="logo" />
-          <h2 class="text-white text-2xl lg:text-5xl font-bold">Fruit Burst</h2>
+          <h2 class="lg:text-white text-2xl lg:text-5xl font-bold">
+            Fruit Burst
+          </h2>
         </div>
 
         <div class="form-control hidden md:hidden lg:block">
@@ -96,11 +100,14 @@
       </nav>
 
       <!-- banner / hero section start from here  -->
-      <section class="lg:mt-8">
+      <section class="lg:mt-8 relative shadow-xl">
         <div class="carousel w-full">
           <!-- slider 1  -->
           <div id="slide1" class="carousel-item relative w-full">
             <img src="./images/banner1.png" class="w-full" />
+            <div
+              class="mix-blend-multiply bg-blue-400 h-full absolute top-0 flex justify-center items-center -mb-10"
+            ></div>
 
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center"
@@ -126,6 +133,7 @@
               </div>
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
+            <div class="absolute bg-gray-900"></div>
           </div>
           <!-- slider 2  -->
           <div id="slide2" class="carousel-item relative w-full">
@@ -212,6 +220,38 @@
             </div>
           </div>
         </div>
+        <!-- bonus section  -->
+        <section class="hidden lg:block absolute">
+          <div
+            class="fruit-con lg:flex gap-8 -mt-20 lg:ml-52 shadow-xl bg-white mx-auto rounded-sm"
+          >
+            <!-- fruits 1 -->
+            <div>
+              <img src="./images/fruit1.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <!-- fruits 2 -->
+            <div>
+              <img src="./images/fruit2.png" alt="" />
+              <p class="text-center">Orange</p>
+            </div>
+            <!-- fruits 3  -->
+            <div>
+              <img src="./images/fruit3.png" alt="" />
+              <p class="text-center">Mango</p>
+            </div>
+            <!-- fruits 4 -->
+            <div>
+              <img src="./images/fruit4.png" alt="" />
+              <p class="text-center">Strawberry</p>
+            </div>
+            <!-- fruits 5 -->
+            <div>
+              <img src="./images/fruit5.png" alt="" />
+              <p class="text-center">Mango</p>
+            </div>
+          </div>
+        </section>
       </section>
     </header>
   </body>
